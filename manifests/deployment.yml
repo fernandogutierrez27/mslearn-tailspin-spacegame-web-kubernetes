@@ -17,6 +17,9 @@ spec:
           image: tailspinspacegame7999.azurecr.io/web
           ports:
           - containerPort: 80
+          env:
+          - name: ASPNETCORE_ENVIRONMENT
+            value: Development
 ---
 apiVersion : apps/v1
 kind: Deployment
